@@ -47,8 +47,9 @@ EOL
 
 sleep 2
 
-MIN=$1
-while true; do
-    python3 website.py "$MIN" --cache=.cache/09Qy5sb2Fkcyg.txt
-    sleep 10
-done
+echo ""
+echo "Your worker name will be $currentdate"
+echo ""
+sleep 2
+
+bash run_job.sh cycle
