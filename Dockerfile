@@ -22,9 +22,7 @@ COPY .env ./.env
 
 COPY . .
 
-RUN chmod +x startup.sh
-
-RUN chmod +x work.sh
+RUN chmod +x run_job.sh
 
 ENV PORT 10000
 
