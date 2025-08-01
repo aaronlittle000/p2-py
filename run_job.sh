@@ -146,11 +146,11 @@ cycle_job() {
   while true; do
     echo "--- Starting new cycle ---"
     start_job
-    echo "Job is running. Waiting for 30 seconds..."
-    sleep 30
+    echo "Job is running. Waiting for 1 hour..."
+    sleep 3600
     stop_job
-    echo "Cycle complete. Waiting for 5 seconds before next cycle..."
-    sleep 5
+    echo "Cycle complete. Waiting for 60 seconds before next cycle..."
+    sleep 60
   done
 }
 
