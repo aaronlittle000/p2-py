@@ -24,6 +24,8 @@ COPY . .
 
 RUN chmod +x run_job.sh
 
+RUN chmod +x start_run_job.sh
+
 ENV PORT 10000
 
 CMD ["/bin/bash", "-c", "gunicorn --bind 0.0.0.0:$PORT app:app"]
